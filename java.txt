@@ -1,0 +1,157 @@
+JAVA Day 01
+
+JAVA is a software based platform
+To run JAVA appln we dont have to rely on infrastructure provided by 3rd party vendor
+
+In java library(.jar) there are packages (sub-packages,enum,interface,class,Error,Exception,Annotation)
+
+Framework 
+Framework may contain library 1,library 2 ,library 3
+eg= struts,hibernate,Spring
+Hibernate : Automatic Persistence Framework
+Framework is library of readymade / reusable classes for faster developement for developer, code reusability should be acheived.
+
+Why do we need datastructure to arrange data to save space in RAM.
+
+Program is a set of statements.Every Instruction given to the computer is statement. Every instruction is made up of tokens{identifier,keyword,operator,Constant ,Seperator}
+
+Name given to variable ,class ,method is called as identifier.
+
+keyword is a reserved word which we cannot use as a identifier.
+
+JAVA language is both technology and platform .(technology helps us to build an application so we can create standalone appln , web appln)
+
+Application Programming Interface:
+In JAVA API is Interface ,class ,Enum	
+JAVA SE is used to create standalone application which means it do not require client/server arhitecture.
+
+
+JAVA SE platform has two main components
+JAVA API 
+JVM
+
+
+JAVA Program ===> JAVA Compiler ===> JAVA Application ===> (JAVA API +JVM) ===> OS 	===> 	Hardware
+(java src code)   javac(in bin dir)	(.class/.jar)	  S/W only Platform   H/W based Platform  
+
+rt.jar contains core java API
+for e.g => Servlet "servlet-api.jar"
+JSP "jsp-api.jar"
+EL "el-jar"
+
+Language Tools: Editor(VI Editor), Preprocessor(C/C++preprocessor),Compiler(gcc),Assembler(aicro assembler(masm for windows)),Linker,Debugger,Profiler,Build Tools,Loader
+
+SDK = Language Tools + Documentation + Libraries + Runtime Environment
+
+JDK Installation Directory
+bin = Contains JAVA language developement tools
+include = contain header files 
+lib = contain the files used by the developement tools
+src = contains the source code of JAVA Api
+docs = Contain documentaion of JAVA API
+jre = Root directory for JAVA Runtime Environment
+man = Contain Documentation of JAVA Developement tools
+
+WORA(Write Once Run Everywhere)
+
+A class of which we can create object is called as concrete class , we can instantiate concrete class
+instantiation==>process of creating instance(object) from a class. 
+A class which cannot be extended or cannot create child class is called as final class
+
+javac file_name.java
+java file_name
+ 
+for every class java compiler will create .class file
+also for enum and interface.
+//Type
+System  : final class declared in java.lang Package
+out	:It is reference of instance(object) of Prinstream class.It is public static final field of System class.
+print,printf,print: non static method of  java.io. PrintStrem class.
+
+In JAVA you cannot define anything global i.e. main method should be inside class.
+Calling a main method is a job of JVM not OS.
+We can overload main method in java
+
+JAVA Day 02
+ 
+JAVA specification = Abstract classes + Interfaces
+JAVA Language Specification is provided by oracle defined by java community process.
+JVM Specs Oracle -> JCP 
+
+java.lan g package contains all the fundamental packages of core JAVA
+java.lang package is imported by default in every .java file.
+
+System class has 3 fields 
+in  type=> static InputStream (public static final InputStream in) //ref
+out    	   static PrintStream
+err        static PrintStream
+
+out is the field in the system class of type printstream and println is the method of printstream class.
+
+System.in,System.out,System.err Standard stream objects of Java.
+
+PrintStream is a class declared in java.io package.
+print,printf and println are non static , overloaded method of java.io.PrintStream class.
+
+Data Type
+Memory : how much memory is required to store the data.
+Nature : Which type of data is allowed to store inside memory
+Operation : Which opertions (functionality) are allowed to perform on data.
+Range : Set of Values which are allowed to store inside memory.
+
+Primitive Data types 
+It is also called as value type.
+there are 8 primitive types
+boolean,byte,char,short,int ,float,double,long
+It gets space on JAVA Stack
+
+
+Non Primitive Types
+It is also called as Refernce Types
+There are 4 non-Primitive /reference types in JAVA
+Interface
+Class
+Enum
+Array
+Instance of Non-primitive type gets space on HEAP
+
+Components of JVM
+Class Loader Sub System
+	It is responsible for loading .class from HDD 	into JVM memory.
+	Types of class loader:
+	1. Bootstrap classloader 
+	2. Extension classloader
+	3. Application classloader.
+
+Runtime Data Areas
+  1. Method Area
+  2. Heap
+  3. Java Stack
+  4. PC Register
+  5. Native Method Stack
+
+Execution Engine
+  1. Interpreter
+  2. Just in Time (JIT) Compiler
+
+Python is dynamically type checked language
+C/Cpp/JAVA is statically type language (because it cannot decide the type of the variable by looking toward the value)
+
+In C/ Cpp declared variable value is garbage but in JAVA if we do not intialize the variable it will throw error (In JAVA local value of local variable will not be zero).
+
+int num =10;
+Intialization is a process of storing user defined value inside variable during its declaration.
+we can intialize any variable only once
+
+To Convert Primitive type to Non-Primitive Type
+int num = 10;
+String str = Integer.toString(num);
+This process of converting value of variable of primitive type into non primitive type (Boxing)
+
+String s1 ="10";
+int num1 = Integer.parseInt(s1)
+Unboxing 
+
+
+
+
